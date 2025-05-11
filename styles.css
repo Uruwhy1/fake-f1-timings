@@ -31,7 +31,7 @@
 body {
   font-family: "Formula1", sans-serif;
   color: #fff;
-  
+
   background-color: #0f0f0f;
   padding: 2rem;
   margin: 0;
@@ -52,20 +52,19 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-
 }
 
-input {
+.form-group input {
   padding: 0.6rem 1rem;
   font-size: 1rem;
 
   border-radius: 4px;
   border: none;
-  
+
   flex: 1;
 }
 
-button {
+.form-group button {
   padding: 0.6rem 1rem;
 
   background-color: #ff2d00;
@@ -77,6 +76,20 @@ button {
   font-size: inherit;
   font-weight: bold;
   cursor: pointer;
+}
+
+.absolute-buttons {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+input[type="color"] {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .timing-container {
@@ -101,6 +114,8 @@ button {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+
+  cursor: pointer;
 }
 
 .leftWrapper {
@@ -119,8 +134,12 @@ button {
   width: 115px;
 }
 
+.position {
+  color: var(--position-color);
+}
+
 .name {
-  background-color: #fff;
+  background-color: var(--name-background);
   border-radius: 5px;
 
   color: var(--color);
@@ -129,5 +148,15 @@ button {
 }
 
 .time {
+  color: #fff;
   font-weight: normal;
+}
+
+.driver-row:first-of-type {
+  .time {
+    color: rgb(250, 0, 250);
+  }
+}
+
+#bulk-import {
 }
