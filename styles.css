@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+@font-face {
+  font-family: "Formula1";
+  src: url("./fonts/Formula1-Regular_web_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formula1";
+  src: url("./fonts/Formula1-Bold_web_0.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formula1Wide";
+  src: url("./fonts/Formula1-Wide_web_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Formula1", sans-serif;
+  color: #fff;
+  
+  background-color: #0f0f0f;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #f00;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ff0101;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+
+  border-radius: 4px;
+  border: none;
+  
+  flex: 1;
+}
+
+button {
+  padding: 0.6rem 1rem;
+
+  background-color: #ff2d00;
+  color: white;
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.timing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-weight: 800;
+
+  font-size: 1.2rem;
+}
+
+.drivers-container {
+  font-family: var(--driver-font);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.driver-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.leftWrapper {
+  background-color: var(--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  padding: 0.25rem;
+
+  > p {
+    padding: 0.25rem;
+  }
+
+  width: 115px;
+}
+
+.name {
+  background-color: #fff;
+  border-radius: 5px;
+
+  color: var(--color);
+  width: 4ch;
+  text-align: center;
+}
+
+.time {
+  font-weight: normal;
+}

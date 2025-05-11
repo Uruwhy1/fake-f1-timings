@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake F1 Live Timing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Fake F1 Live Timing</h1>
+
+    <div class="form-group">
+      <button onclick="changeCurrentFont()">Change Font</button>
+      <input type="text" id="race-name" placeholder="Race Name" />
+      <button onclick="updateRaceName()">Update Race</button>
+    </div>
+    <div class="form-group">
+      <input type="text" id="driver" placeholder="Driver Name" />
+      <input type="text" id="time" placeholder="Lap Time (e.g. 1:23.456)" />
+      <input type="text" id="color" placeholder="Team Color (e.g. orange)" />
+      <button onclick="addDriver()">Add</button>
+    </div>
+
+    <div class="timing-container">
+      <div id="race">XXX Grand Prix</div>
+      <div id="timing-container" class="drivers-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
